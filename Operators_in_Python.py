@@ -36,9 +36,11 @@ num2  = 2
 print("Exponent of two number is:", Num1 ** num2)
 
 #7. Floor Division (//): Returns the largest possible integer from the division.
-Num1 = 10
+Num1 = 22.5
 num2  = 20
 print("Floor Division of two number is:", Num1 // num2)
+
+##############################################################################################################
 
 # Comparison Operators:
 # 1. Equal to (==): Returns True if both operands are equal.    
@@ -71,6 +73,8 @@ a = 10
 b = 20
 print("Less than or equal to operator result is:", a <= b)
 
+###################################################################################################################
+
 # Logical Operators:
 # 1. and: Returns True if both operands are True.
 a = True
@@ -84,8 +88,10 @@ print("Logical OR operator result is:", a or b)
 
 # 3. not: Returns True if the operand is False, and vice versa.
 a = False
-# b = True
+b = True
 print("Logical NOT operator result is:", not a)
+
+################################################################################################ 
 
 # #assignment Operators:
 # # 1. Assignment (=): Assigns the value of the right operand to the left operand
@@ -128,6 +134,8 @@ a = 10
 a //= 5
 print("Floor Division and Assign operator result is:", a)
 
+######################################################################################################
+
 # # Bitwise Operators:
 # 1. AND (&): Performs a bitwise AND operation on two operands.
 a = 10
@@ -135,14 +143,14 @@ b = 20
 print("Bitwise AND operator result is:", a & b)
 
 # # 2. OR (|): Performs a bitwise OR operation on two operands.
-# a = 10
-# b = 20
-# print("Bitwise OR operator result is:", a | b)
+a = 10
+b = 20
+print("Bitwise OR operator result is:", a | b)
 
-# # 3. XOR (^): Performs a bitwise XOR operation on two operands.
-# a = 10
-# b = 20
-# print("Bitwise XOR operator result is:", a ^ b)
+# 3. XOR (^): Performs a bitwise XOR operation on two operands.
+a = 10
+b = 20
+print("Bitwise XOR operator result is:", a ^ b)
 
 # 4. NOT (~): Performs a bitwise NOT operation on a single operand.
 a = 10
@@ -151,7 +159,6 @@ print("Bitwise NOT operator result is:", ~a)
 # 5. Left Shift (<<): Shifts the bits of the left operand to the left by the number of positions specified by the right operand.
 a = 10
 b = 2
-
 print("Left Shift operator result is:", a << b)
 
 # 6. Right Shift (>>): Shifts the bits of the left operand to the right by the number of positions specified by the right operand.
