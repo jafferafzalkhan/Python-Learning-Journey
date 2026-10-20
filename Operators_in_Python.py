@@ -165,6 +165,4 @@ print("Left Shift operator result is:", a << b)
 a = 10
 b = 2
 print("Right Shift operator result is:", a >> b)
-
-
-
+#
