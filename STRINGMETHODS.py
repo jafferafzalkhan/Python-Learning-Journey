@@ -8,24 +8,32 @@ print(STR1)
 print(STR2)
 print(STR3)
 
+###########################################################################################################
+
 # String slicing is a technique used to extract a portion of a string. 
 # In Python, you can use slicing to get a substring from a string. The syntax for slicing is:
 
 name = "Python Programming"
 name_slice1 = name[7]  # This will extract characters from index 7
 print(name_slice1)  # Output: P
+
 name_slice2 = name[0:6]  # This will extract characters from index 0 to 5
 name_slice = name[0:6]  # This will extract characters from index 0 to 5
 print(name_slice)  # Output: Python 
+
 name_slice2 = name[-3:-1]  # This will extract characters from index -3 to -1
 print(name_slice2)  # Output: in  
+
+##########################################################
 
 # slicing with skip value
 name_slice3 = name[0:6:2]  # This will extract characters from index 0 to 5 with a step of 2
 print(name_slice3)  # Output: Pto
+
 name_slice4 = name[::3]  # This will extract every third character from the string
 print(name_slice4)  # Output: Ph oai
 
+################################################################################################################
 
 # string functions in python are used to perform various operations on strings.
 # Some of the commonly used string functions are:
@@ -76,7 +84,7 @@ print(alpha_8.rindex("World"))  # Output: 13
 
 
 # .count() - This function returns the number of occurrences of a substring in a string.
-alpha_9 = "Hello, World! World"
+alpha_9 = "Hello,    World! World"
 print(alpha_9.count("World"))  # Output: 2
 
 # .startswith() - This function checks if a string starts with a specified substring. It returns True if it does, and False otherwise.
@@ -102,6 +110,8 @@ print(alpha_14.removeprefix("Hello, "))  # Output: World! World
 # .removesuffix() - This function removes all occurrences of a specified substring from the end of a string.
 alpha_15 = "Hello, World! World"
 print(alpha_15.removesuffix(" World"))  # Output: Hello, World! 
+
+
 
 # .split() - This function splits a string into a list of substrings based on a specified delimiter. By default, it splits on whitespace.
 alpha_16 = "Hello, World! World"
