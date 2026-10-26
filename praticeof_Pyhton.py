@@ -305,5 +305,11 @@ print(Total_Amount)
 Num10 = int(input("Enter the Number you want :- "))
 print(Num10 > 10 and Num10 < 100 or Num10 % 2 == 0 )
 
+# Take a student's name and marks in three subjects as input. Print their name, total marks, and average marks.
+Student_1 = input("Enter student's name: ")
+Maths_marks = int(input("Enter Your marks: "))
+English_marks = int(input("Enter Your marks: "))
+Python_marks = int(input("Enter Your marks: "))
 
-
+student_details = Student_1 + {Maths_marks} + {English_marks} + {Python_marks}
+print(student_details)
