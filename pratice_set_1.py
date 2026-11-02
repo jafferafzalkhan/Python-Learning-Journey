@@ -83,81 +83,133 @@
 # calculate_circle = 3.14 * radius**2
 # print(f"area of the circle is : {calculate_circle}")
 
-# [ ] Q10. A student scores 78, 85, and 92 in three subjects. Calculate the total and average marks.
-students_progress = {
-    "English" : 79,
-    "Maths" : 85,
-    "python" : 99
-}
+# # [ ] Q10. A student scores 78, 85, and 92 in three subjects. Calculate the total and average marks.
+# students_progress = {
+#     "English" : 79,
+#     "Maths" : 85,
+#     "python" : 99
+# }
 
-Total = sum(students_progress.values())
-average_marks = Total/3
+# Total = sum(students_progress.values())
+# average_marks = Total/3
 
-print(Total)
-print(average_marks)
+# print(Total)
+# print(average_marks)
 
 
-# [ ] Q11. Predict the output of a = 10; a += 5; a *= 2; a -= 4; a //= 4. Print a.
-a = 10
-a += 5    # a = 10 + 5 = 15
-a *= 2    # a = 15 * 2 = 30
-a -= 4    # a = 30 - 4 = 26
-a //= 4   # a = 26 // 4 = 6
+# # [ ] Q11. Predict the output of a = 10; a += 5; a *= 2; a -= 4; a //= 4. Print a.
+# a = 10
+# a += 5    # a = 10 + 5 = 15
+# a *= 2    # a = 15 * 2 = 30
+# a -= 4    # a = 30 - 4 = 26
+# a //= 4   # a = 26 // 4 = 6
 
-# [ ] Q12. Predict the results of 10 > 5, 10 == 5, 10 != 5, True and False, True or False, and not True.
-print(10 > 5)          # True
-print(10 == 5)         # False
-print(10 != 5)         # True
-print(True and False)  # False
-print(True or False)   # True
-print(not True)        # False
+# # [ ] Q12. Predict the results of 10 > 5, 10 == 5, 10 != 5, True and False, True or False, and not True.
+# print(10 > 5)          # True
+# print(10 == 5)         # False
+# print(10 != 5)         # True
+# print(True and False)  # False
+# print(True or False)   # True
+# print(not True)        # False
 
 
 # Part 3 — Strings
 # [ ] Q13. Store your full name in a string. Print it in uppercase, lowercase, and title case.
 
+My_name = "Jaffer Afzal Khan"
+print(My_name.upper())
+print(My_name.lower())
+print(My_name.title())
 
-# [ ] Q14. Given text = 'Python Programming', print its first character, last character, first six characters, and the string in reverse using slicing.
+# [ ] Q14. Given text = 'Python Programming', print its first character, last character, 
+# first six characters, and the string in reverse using slicing.
 
+text = 'pyhton Programming'
+print(text[0])
+print(text[-1])
+print(text[0:7])
+print(text[:-1])
 
 # [ ] Q15. Given text = '  Learn Python  ', remove the extra spaces and print the cleaned string.
-
+text = '   Learn Python   '
+print(text.strip())
 
 # [ ] Q16. Count how many times the letter 'a' occurs in 'banana' using a string method.
-
+fruit = 'banana'
+print(fruit.count('a'))
 
 # [ ] Q17. Replace 'Java' with 'Python' in the string 'I am learning Java'.
-
+lang = 'Java'
+print(lang.replace('Java','Python'))
 
 # [ ] Q18. Split 'apple,banana,mango,orange' into a list of fruits. Then join the fruits using ' - ' as a separator.
-
+split_text = 'apple,banana,mango,orange'
+new_text = split_text.split(",")
+print(new_text)
+join_text = "-".join(new_text)
+print(join_text)
 
 # [ ] Q19. Given text = 'python programming', print its length, check whether it starts with 'python', and check whether it contains 'gram'.
+text = 'python programming'
+print(len(text))
+print(text.startswith('python'))
+print('gram' in text)
+print(' python  ' in text)
 
 
 
 # Part 4 — Lists
 # [ ] Q20. Create a list of five favourite foods. Print the first item, last item, and the list from the second to fourth items.
-
+Fav_foods = ['apple', 'Mango','Banana','Grapes','Jack Fruit']
+print(Fav_foods[0])
+print(Fav_foods[-1])
+print(Fav_foods[1:4])
 
 # [ ] Q21. Given numbers = [10, 20, 30, 40], change 20 to 25 and print the updated list.
-
+numbers = [10, 20, 30, 40]
+numbers.insert(225,8)
+print(numbers)
+numbers[1] = 25
+print(numbers)
 
 # [ ] Q22. Create a list of three colours. Add one colour using append(), insert another at index 1, and extend the list with two more colours.
-
+colours = ['black','green','yellow']
+colours.append('white')
+colours.insert(1,'orange')
+colours.extend(["blue","orange"])
+print(colours)
 
 # [ ] Q23. Given numbers = [10, 20, 30, 20, 40], remove the first 20, then remove and print the last element.
-
+numbers = [10, 20, 30, 20, 40]
+numbers.remove(20)
+number_1 = numbers.pop(3)
+print(numbers)
+print(number_1)
 
 # [ ] Q24. Given numbers = [5, 2, 8, 1, 9], sort the list in ascending order, then reverse it.
+numbers = [5, 2, 8, 1, 9]
+numbers.sort()
+print(numbers)
 
+numbers.sort(reverse=True)
+print(numbers)
 
 # [ ] Q25. Create a list of five numbers. Print its length, maximum, minimum, sum, and sorted version using built-in functions.
-
+numbers = [5, 2, 8, 1, 9]
+print(len(numbers))
+print(max(numbers))
+print(min(numbers))
+print(sum(numbers))
+print(sorted(numbers))
 
 # [ ] Q26. Given numbers = [10, 20, 30, 40, 50], use slicing to create a list of the first three elements, the last two elements, and the reversed list.
-
-
+numbers = [10, 20, 30, 40, 50]
+first_three = numbers[0:3]
+last_two = numbers[-2:]
+reversed_list = numbers[::-1]
+print(first_three)
+print(last_two)
+print(reversed_list)
 
 # Part 5 — Tuples
 # [ ] Q27. Create a tuple containing your name, age, and city. Print its type and length.
