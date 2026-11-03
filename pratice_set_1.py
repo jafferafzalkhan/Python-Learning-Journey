@@ -213,43 +213,89 @@ print(reversed_list)
 
 # Part 5 — Tuples
 # [ ] Q27. Create a tuple containing your name, age, and city. Print its type and length.
-
+my_details = ("Jaffer Khan",22,"Mumbai")
+print(len(my_details))
+print(type(my_details))
 
 # [ ] Q28. Given values = (10, 20, 30, 40, 50), print the first item, last item, and middle three items using indexing and slicing.
-
+values = (10, 20, 30, 40, 50)
+print(values[0])
+print(values[-1])
+print(values[1:4])
 
 # [ ] Q29. Given numbers = (10, 20, 10, 30, 10, 40), count how many times 10 appears and find the index of 30.
-
+numbers = (10, 20, 10, 30, 10, 40)
+num = numbers.count(10)
+print(num)
+print(numbers.index(30))
 
 # [ ] Q30. Create a tuple with one element containing the number 5. Explain why (5,) is a tuple but (5) is an integer.
+Num_1 = (5)
+print(type(Num_1))
+num_2 = (5,)
+print(type(num_2))
 
 
 
 # Part 6 — Dictionaries
 # [ ] Q31. Create a dictionary containing your name, age, city, and favourite language. Print the value of each key.
+My_info = {
+    "Name" : "jaffer",
+    "Age" : 22,
+    "City" : "Mumbai",
+    "lang" : "Python"
+}
 
+My_details = My_info.values()
+print(My_details)
 
 # [ ] Q32. Given student = {'name': 'Ali', 'marks': 75}, add a city key, update marks to 90, and print the dictionary.
-
+student = {'name': 'Ali', 'marks': 75}
+student["City"] = "Mumbai"
+student['marks'] = 90
+print(student)
 
 # [ ] Q33. Given data = {'a': 10, 'b': 20, 'c': 30}, print all keys, all values, and all key-value pairs. Convert the values into a list.
-
+data = {'a': 10, 'b': 20, 'c': 30}
+print(data.items())
+My_list = list(data.values())
+print(My_list)
 
 # [ ] Q34. Given items = {'pen': 10, 'book': 50, 'bag': 500}, remove 'book' using pop(), print the removed value, and display the remaining dictionary.
+items = {'pen': 10, 'book': 50, 'bag': 500}
+my_items = items.pop('book')
+print(my_items)
+print(items)
 
 
-# [ ] Q35. Create a dictionary with {'name': 'Jaffer', 'age': 23}. Use get() and setdefault() to access existing and missing keys. Print the dictionary after each operation.
+# [ ] Q35. Create a dictionary with {'name': 'Jaffer', 'age': 23}. Use get() and setdefault() to access existing and missing keys.
+#  Print the dictionary after each operation.
+details = {'name': 'Jaffer', 'age': 23}
+my_name = details.get('name')
+print(my_name)
+print(details)
 
-
+result = details.setdefault("age", "23")
+print(result)
+print(details)
 
 # Part 7 — Sets
-# [ ] Q36. Create a set containing 10, 20, 30, 20, 40, 10, 50. Print the set and explain what happened to duplicate values.
-
+# [ ] Q36. Create a set containing 10, 20, 30, 20, 40, 10, 50. Print the set and 
+# explain what happened to duplicate values.
+sets_1 = {10, 20, 30, 20, 40, 10, 50}
+print(sets_1)
 
 # [ ] Q37. Create an empty set. Add 10 and 20 using add(), then add 30, 40, and 50 using update(). Print the set.
+sets_2 = set()
+sets_2.add(10)
+print(sets_2)
+sets_2.update({20,20,30,40})
+print(sets_2)
+print(sorted(sets_2))
 
+# [ ] Q38. Given values = {10, 20, 30, 40, 50}, remove 20 using remove(), then try discard(100).
+#  Explain the difference between remove() and discard().
 
-# [ ] Q38. Given values = {10, 20, 30, 40, 50}, remove 20 using remove(), then try discard(100). Explain the difference between remove() and discard().
 
 
 # [ ] Q39. Given A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find their union, intersection, difference A - B, and symmetric difference.
