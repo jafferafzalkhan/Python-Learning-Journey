@@ -295,10 +295,36 @@ print(sorted(sets_2))
 
 # [ ] Q38. Given values = {10, 20, 30, 40, 50}, remove 20 using remove(), then try discard(100).
 #  Explain the difference between remove() and discard().
+values = {10, 20, 30, 40, 50}
+values.remove(20)
+print(values)
+discard_value = values.discard(100)
+print(discard_value)
+print(values)
 
 
 
 # [ ] Q39. Given A = {1, 2, 3, 4} and B = {3, 4, 5, 6}, find their union, intersection, difference A - B, and symmetric difference.
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+values_union = B.union(A)
+print(values_union)
 
+values_intersection = B.intersection(A)
+print(values_intersection)
+
+values_difference = A.difference(B)
+print(values_difference)
+
+Values_symmetric_difference = B.symmetric_difference(A)
+print(Values_symmetric_difference)
 
 # [ ] Q40. Given A = {10, 20} and B = {10, 20, 30, 40}, use issubset(), issuperset(), and isdisjoint(). Predict the results and explain each.
+A = {25, 27} 
+B = {10, 20, 30, 40}
+
+C = A.issubset(B)
+D = A.issuperset(B)
+E = A.isdisjoint(B)
+
+print(f"{C} + {D} + {E}")
