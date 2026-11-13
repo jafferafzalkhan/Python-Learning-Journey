@@ -202,3 +202,58 @@
 # 2. Write a program to create a dictionary of 5 students and their marks. Display the student who scored the
 # highest marks.
 
+# Student_Dict = dict()
+
+# for i in range(5):
+#     student = input("Enter student name :- ")
+#     student_Marks = int(input("Enter student marks :- "))
+#     Student_Dict[student] = student_Marks
+
+# Higest_marks = 0
+# Topper_Dict = dict()
+# for j in Student_Dict:
+#     if Student_Dict[j] > Higest_marks:
+#         Higest_marks = Student_Dict[j]
+#         Topper_Dict.update({j: Higest_marks})
+
+# print(Higest_marks)
+# print(Topper_Dict)
+
+# 3. Write a program to count the frequency of each character in a string using a dictionary.
+
+
+# Frequency_Dict = {}
+
+# word = input("Enter a string: ")
+
+# for j in word:
+#     if j in Frequency_Dict:
+#         Frequency_Dict[j] += 1
+#     else:
+#         Frequency_Dict[j] = 1
+
+# print(Frequency_Dict)
+
+
+# # . Create an empty dictionary and allow 4 friends to enter their names and favourite programming languages.
+
+# Friends_Dict = {}
+
+# for i in range(4):
+#     name = input("Enter your name: ")
+#     language = input("Enter your favourite programming language: ")
+
+#     Friends_Dict[name] = language
+
+# print(Friends_Dict)
+
+#  What will be the output of the following code?
+s = set()
+s.add(10)
+s.add(20)
+s.add(10)
+s.add(30)
+s.add(20)
+print(s)
+print(len(s))
+
