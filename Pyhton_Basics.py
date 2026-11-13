@@ -3,7 +3,7 @@
 # it was released in 1991 and has since become one of the most widely used programming languages in the world.
 
 #lets Print First Code 
-print("Hello, World!")
+# print("Hello, World!")
 
 # Modules :- The modules are the files that contain the python code. "import"
 # the modules can be imported into other modules or scripts to reuse the code. which is written by other developers.
@@ -14,10 +14,10 @@ print("Hello, World!")
 # Variables  variables are used to store data in python. They are created by assigning a value to a name using the assignment operator (=).
 
 _jea = 'jf'
-print(_jea)
+# print(_jea)
 
-Jagd = 22
-print(Jagd)
+# Jagd = 22
+# print(Jagd)
 
 #data Types in python
 
