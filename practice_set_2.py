@@ -247,13 +247,201 @@
 
 # print(Friends_Dict)
 
-#  What will be the output of the following code?
-s = set()
-s.add(10)
-s.add(20)
-s.add(10)
-s.add(30)
-s.add(20)
-print(s)
-print(len(s))
+# #  What will be the output of the following code?
+# s = set()
+# s.add(10)
+# s.add(20)
+# s.add(10)
+# s.add(30)
+# s.add(20)
+# print(s)
+# print(len(s))
 
+# 6. Write a program to find the common elements between two sets.
+set1 = {1, 2, 3, 4, 5}
+set2 = {4, 5, 6, 7, 8}
+common_elements = set1 & set2
+print(set1.intersection(set2))
+print(common_elements)
+
+# Write a program to find the union and intersection of two sets
+union_elements = set1 | set2
+print(union_elements)
+
+# What will be the output? Explain how updating an existing dictionary key works.
+a = {}
+a["name"] = "Jaffer"
+a["age"] = 22
+a["name"] = "Rahul"
+print(a)
+print(len(a))
+
+# Write a program to find the difference between two sets.
+difference_elements = set1 - set2
+print(difference_elements)
+
+
+# Conditional Statements Questions
+
+# 1. Write a program to find the greatest of three numbers entered by the user.
+
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if a >= b and a >= c:
+    print("Greatest number:", a)
+
+elif b >= a and b >= c:
+    print("Greatest number:", b)
+
+else:
+    print("Greatest number:", c)
+
+
+# 2. Write a program to check whether a given number is positive, negative or zero.
+
+num = int(input("Enter a number: "))
+
+if num > 0:
+    print("Positive number")
+
+elif num < 0:
+    print("Negative number")
+
+else:
+    print("Zero")
+
+
+# 3. Write a program to check whether a given year is a leap year or not.
+
+year = int(input("Enter a year: "))
+
+if year % 400 == 0:
+    print("Leap year")
+
+elif year % 100 == 0:
+    print("Not a leap year")
+
+elif year % 4 == 0:
+    print("Leap year")
+
+else:
+    print("Not a leap year")
+
+
+# 4. A student has three subjects. Write a program to calculate the percentage and check whether the student has passed or failed.
+# Conditions: Minimum 40% overall and minimum 33 marks in each subject. Each subject carries 100 marks.
+
+sub1 = int(input("Enter marks of subject 1: "))
+sub2 = int(input("Enter marks of subject 2: "))
+sub3 = int(input("Enter marks of subject 3: "))
+
+total = sub1 + sub2 + sub3
+percentage = (total / 300) * 100
+
+print("Total marks:", total)
+print("Percentage:", percentage)
+
+if percentage >= 40 and sub1 >= 33 and sub2 >= 33 and sub3 >= 33:
+    print("Pass")
+
+else:
+    print("Fail")
+
+
+# 5. Write a program to check whether a given character is a vowel or consonant.
+
+character = input("Enter a character: ").lower()
+
+vowels = ("a", "e", "i", "o", "u")
+
+if character in vowels:
+    print("Vowel")
+
+else:
+    print("Consonant")
+
+
+# 6. Write a program to calculate an electricity bill:
+# First 100 units at Rs. 5 per unit,
+# next 100 units at Rs. 7 per unit,
+# and units above 200 at Rs. 10 per unit.
+
+units = int(input("Enter electricity units: "))
+
+if units <= 100:
+    bill = units * 5
+
+elif units <= 200:
+    bill = (100 * 5) + ((units - 100) * 7)
+
+else:
+    bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
+
+print("Electricity bill:", bill)
+
+
+# 7. Write a program to calculate grades:
+# 90–100: A+
+# 80–89: A
+# 70–79: B
+# 60–69: C
+# 40–59: D
+# Below 40: F
+
+marks = int(input("Enter your marks: "))
+
+if marks >= 90 and marks <= 100:
+    print("Grade A+")
+
+elif marks >= 80:
+    print("Grade A")
+
+elif marks >= 70:
+    print("Grade B")
+
+elif marks >= 60:
+    print("Grade C")
+
+elif marks >= 40:
+    print("Grade D")
+
+elif marks >= 0:
+    print("Grade F")
+
+else:
+    print("Invalid marks")
+
+
+# 8. Write a program to check whether a given username contains exactly 10 characters.
+
+username = input("Enter your username: ")
+
+if len(username) == 10:
+    print("Valid username")
+
+else:
+    print("Username must contain exactly 10 characters")
+
+
+# 9. Write a program to check whether a given number is divisible by both 5 and 11.
+
+num = int(input("Enter a number: "))
+
+if num % 5 == 0 and num % 11 == 0:
+    print("Divisible by both 5 and 11")
+
+else:
+    print("Not divisible by both 5 and 11")
+
+
+# 10. Write a program to check whether a given string contains the word "Python" or not (case-insensitive).
+
+text = input("Enter a string: ")
+
+if "python" in text.lower():
+    print("Python is present in the string")
+
+else:
+    print("Python is not present in the string")
