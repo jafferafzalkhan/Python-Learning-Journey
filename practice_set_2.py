@@ -551,10 +551,16 @@
 
 #     print()
 
-num = int(input("Enter number: "))
+# num = int(input("Enter number: "))
 
-for i in range(1 , num):
-    for j in range(2 * i -1 ):
-        print("*", end="")
+# for i in range(1 , num):
+#     for j in range(2 * i -1 ):
+#         print("*", end="")
 
-    print()
+#     print()
+
+
+# num = int(input("Enter a number: "))
+
+# for i in range(11, 0 , -1):
+#     print(f"{num} x {i} = {num * i}")
